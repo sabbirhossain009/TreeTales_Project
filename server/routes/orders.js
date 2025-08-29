@@ -1,7 +1,8 @@
-const express = require('express');
-const Order = require('../models/Order');
-const Product = require('../models/Product');
-const auth = require('../middleware/auth');
+import express from 'express';
+import Order from '../models/Order.js';
+import Product from '../models/Product.js';
+import User from '../models/User.js';
+import auth from '../middleware/auth.js';
 
 const router = express.Router();
 
@@ -216,4 +217,4 @@ router.put('/:id/cancel', auth, async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

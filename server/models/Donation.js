@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const donationSchema = new mongoose.Schema({
   title: {
@@ -79,4 +79,4 @@ donationSchema.index({ category: 1, status: 1, isApproved: 1 });
 donationSchema.index({ donor: 1 });
 donationSchema.index({ title: 'text', description: 'text' });
 
-module.exports = mongoose.model('Donation', donationSchema);
+export default mongoose.model('Donation', donationSchema);

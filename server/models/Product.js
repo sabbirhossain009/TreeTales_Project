@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const productSchema = new mongoose.Schema({
   name: {
@@ -114,4 +114,4 @@ productSchema.index({ name: 'text', description: 'text', tags: 'text' });
 productSchema.index({ category: 1, isApproved: 1, isActive: 1 });
 productSchema.index({ seller: 1 });
 
-module.exports = mongoose.model('Product', productSchema);
+export default mongoose.model('Product', productSchema);

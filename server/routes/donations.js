@@ -1,6 +1,7 @@
-const express = require('express');
-const Donation = require('../models/Donation');
-const auth = require('../middleware/auth');
+import express from 'express';
+import Donation from '../models/Donation.js';
+import User from '../models/User.js';
+import auth from '../middleware/auth.js';
 
 const router = express.Router();
 
@@ -161,4 +162,4 @@ router.put('/:id/approve', auth, async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

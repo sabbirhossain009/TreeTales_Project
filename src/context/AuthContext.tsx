@@ -40,7 +40,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     const storedUser = localStorage.getItem('treetaley_user');
     if (storedUser) {
       setUser(JSON.parse(storedUser));
-    }
+    console.error('Login error:', error);
+    console.error('Signup error:', error);
+    setErrors({ general: error.message || 'Registration failed. Please try again.' });
     setIsLoading(false);
   }, []);
 
@@ -80,7 +82,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     localStorage.removeItem('treetales_user');
   };
 
-  const updateProfile = async (data: Partial<User>) => {
+  const updateProfile = async (data: Partial<User>): Promise<void> => {
     try {
       const response = await apiService.updateProfile(data);
       setUser(response.user);

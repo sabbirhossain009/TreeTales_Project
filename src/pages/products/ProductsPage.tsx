@@ -50,6 +50,8 @@ const ProductsPage: React.FC = () => {
 
   // Mock products data
   useEffect(() => {
+    // In a real app, this would fetch from the API
+    // For now, we'll use mock data that matches our seeded database
     const mockProducts: Product[] = [
       {
         id: '1',
@@ -138,7 +140,7 @@ const ProductsPage: React.FC = () => {
         featured: false
       },
       {
-        id: '6',
+        id: '6', 
         name: 'Pothos',
         price: 400,
         image: 'https://images.pexels.com/photos/4751978/pexels-photo-4751978.jpeg?auto=compress&cs=tinysrgb&w=400',
@@ -151,6 +153,109 @@ const ProductsPage: React.FC = () => {
         lightRequirement: 'Low',
         waterFrequency: 'Weekly',
         description: 'Fast-growing trailing plant perfect for hanging baskets',
+        inStock: true,
+        featured: true
+      },
+      {
+        id: '7',
+        name: 'ZZ Plant (Zamioculcas Zamiifolia)',
+        price: 750,
+        image: 'https://images.pexels.com/photos/6208086/pexels-photo-6208086.jpeg?auto=compress&cs=tinysrgb&w=400',
+        rating: 4.8,
+        reviews: 78,
+        seller: 'Green Paradise',
+        location: 'Dhaka',
+        category: 'Indoor Plants',
+        difficulty: 'Easy',
+        lightRequirement: 'Low',
+        waterFrequency: 'Monthly',
+        description: 'Virtually indestructible plant perfect for low-light spaces',
+        inStock: true,
+        featured: false
+      },
+      {
+        id: '8',
+        name: 'Spider Plant',
+        price: 350,
+        image: 'https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg?auto=compress&cs=tinysrgb&w=400',
+        rating: 4.7,
+        reviews: 134,
+        seller: 'Plant Haven',
+        location: 'Chittagong',
+        category: 'Hanging Plants',
+        difficulty: 'Easy',
+        lightRequirement: 'Medium',
+        waterFrequency: 'Twice weekly',
+        description: 'Classic houseplant that produces baby plants for easy propagation',
+        inStock: true,
+        featured: false
+      },
+      {
+        id: '9',
+        name: 'Aloe Vera',
+        price: 450,
+        image: 'https://images.pexels.com/photos/2123482/pexels-photo-2123482.jpeg?auto=compress&cs=tinysrgb&w=400',
+        rating: 4.6,
+        reviews: 98,
+        seller: 'Urban Garden',
+        location: 'Khulna',
+        category: 'Succulents',
+        difficulty: 'Easy',
+        lightRequirement: 'High',
+        waterFrequency: 'Bi-weekly',
+        description: 'Medicinal succulent with healing properties, perfect for sunny spots',
+        inStock: true,
+        featured: false
+      },
+      {
+        id: '10',
+        name: 'Boston Fern',
+        price: 550,
+        image: 'https://images.pexels.com/photos/4751978/pexels-photo-4751978.jpeg?auto=compress&cs=tinysrgb&w=400',
+        rating: 4.3,
+        reviews: 56,
+        seller: 'Green Paradise',
+        location: 'Dhaka',
+        category: 'Hanging Plants',
+        difficulty: 'Medium',
+        lightRequirement: 'Medium',
+        waterFrequency: 'Twice weekly',
+        description: 'Lush, feathery plant that adds tropical feel to any space',
+        inStock: true,
+        featured: false
+      },
+      {
+        id: '11',
+        name: 'Jade Plant',
+        price: 320,
+        image: 'https://images.pexels.com/photos/2123482/pexels-photo-2123482.jpeg?auto=compress&cs=tinysrgb&w=400',
+        rating: 4.5,
+        reviews: 73,
+        seller: 'Plant Haven',
+        location: 'Chittagong',
+        category: 'Succulents',
+        difficulty: 'Easy',
+        lightRequirement: 'High',
+        waterFrequency: 'Bi-weekly',
+        description: 'Symbol of good luck and prosperity with thick, glossy leaves',
+        inStock: true,
+        featured: false
+      },
+      {
+        id: '12',
+        name: 'Bird of Paradise',
+        price: 1800,
+        originalPrice: 2200,
+        image: 'https://images.pexels.com/photos/4751978/pexels-photo-4751978.jpeg?auto=compress&cs=tinysrgb&w=400',
+        rating: 4.5,
+        reviews: 34,
+        seller: 'Botanical Dreams',
+        location: 'Dhaka',
+        category: 'Indoor Plants',
+        difficulty: 'Medium',
+        lightRequirement: 'High',
+        waterFrequency: 'Weekly',
+        description: 'Stunning tropical plant that can produce exotic orange and blue flowers',
         inStock: true,
         featured: true
       }

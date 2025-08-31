@@ -38,7 +38,7 @@ const BlogPage: React.FC = () => {
     {
       id: '1',
       title: 'Complete Guide to Indoor Plant Care for Beginners',
-      excerpt: 'Learn the essential tips and tricks for keeping your indoor plants healthy and thriving. Perfect for those just starting their plant journey.',
+      excerpt: 'Learn the essential tips and tricks for keeping your indoor plants healthy and thriving. Perfect for those just starting their plant journey in Bangladesh.',
       content: '',
       author: 'Dr. Fatima Rahman',
       authorAvatar: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=150',
@@ -52,8 +52,8 @@ const BlogPage: React.FC = () => {
     },
     {
       id: '2',
-      title: 'Best Plants for Rooftop Gardens in Bangladesh',
-      excerpt: 'Discover which plants thrive in Bangladesh\'s climate and are perfect for rooftop gardening. Includes care instructions and seasonal tips.',
+      title: 'Best Plants for Rooftop Gardens in Bangladesh Climate',
+      excerpt: 'Discover which plants thrive in Bangladesh\'s tropical climate and are perfect for rooftop gardening. Includes care instructions and seasonal planting tips.',
       content: '',
       author: 'Ahmed Hassan',
       authorAvatar: 'https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=150',
@@ -124,6 +124,66 @@ const BlogPage: React.FC = () => {
       image: 'https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=600',
       featured: false,
       views: 445
+    },
+    {
+      id: '7',
+      title: 'Urban Composting: Turn Kitchen Waste into Plant Gold',
+      excerpt: 'Learn how to create nutrient-rich compost from kitchen scraps in small urban spaces. Perfect for apartment dwellers and rooftop gardeners.',
+      content: '',
+      author: 'Dr. Fatima Rahman',
+      authorAvatar: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=150',
+      date: '2024-01-01',
+      readTime: '6 min read',
+      category: 'Sustainability',
+      tags: ['composting', 'urban', 'waste-management'],
+      image: 'https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg?auto=compress&cs=tinysrgb&w=600',
+      featured: false,
+      views: 387
+    },
+    {
+      id: '8',
+      title: 'Monstera Care: From Cutting to Climbing Giant',
+      excerpt: 'Everything you need to know about growing and caring for Monstera plants. From propagation to providing proper support for climbing.',
+      content: '',
+      author: 'Maya Patel',
+      authorAvatar: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150',
+      date: '2023-12-28',
+      readTime: '8 min read',
+      category: 'Plant Care',
+      tags: ['monstera', 'climbing-plants', 'propagation'],
+      image: 'https://images.pexels.com/photos/6208086/pexels-photo-6208086.jpeg?auto=compress&cs=tinysrgb&w=600',
+      featured: true,
+      views: 892
+    },
+    {
+      id: '9',
+      title: 'Water-Wise Gardening in Bangladesh\'s Dry Season',
+      excerpt: 'Strategies for maintaining a thriving garden during Bangladesh\'s dry months. Learn about drought-resistant plants and water conservation techniques.',
+      content: '',
+      author: 'Rashid Ahmed',
+      authorAvatar: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=150',
+      date: '2023-12-25',
+      readTime: '7 min read',
+      category: 'Seasonal Tips',
+      tags: ['drought-resistant', 'water-conservation', 'dry-season'],
+      image: 'https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=600',
+      featured: false,
+      views: 634
+    },
+    {
+      id: '10',
+      title: 'Building a Vertical Garden: Maximize Your Space',
+      excerpt: 'Create stunning vertical gardens perfect for small rooftops and balconies. Learn about plant selection, irrigation, and structural considerations.',
+      content: '',
+      author: 'Ahmed Hassan',
+      authorAvatar: 'https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=150',
+      date: '2023-12-22',
+      readTime: '10 min read',
+      category: 'Rooftop Gardening',
+      tags: ['vertical-garden', 'space-saving', 'small-spaces'],
+      image: 'https://images.pexels.com/photos/4751978/pexels-photo-4751978.jpeg?auto=compress&cs=tinysrgb&w=600',
+      featured: false,
+      views: 567
     }
   ];
 

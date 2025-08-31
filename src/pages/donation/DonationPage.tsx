@@ -53,7 +53,7 @@ const DonationPage: React.FC = () => {
     {
       id: '1',
       title: 'Healthy Snake Plant',
-      description: 'Beautiful snake plant that has outgrown my space. Perfect for beginners!',
+      description: 'Beautiful snake plant that has outgrown my space. Perfect for beginners! The plant is about 2 feet tall and has been well-cared for.',
       image: 'https://images.pexels.com/photos/2123482/pexels-photo-2123482.jpeg?auto=compress&cs=tinysrgb&w=400',
       donor: 'Sarah Ahmed',
       location: 'Dhanmondi, Dhaka',
@@ -85,6 +85,42 @@ const DonationPage: React.FC = () => {
       status: 'available',
       category: 'Accessories',
       condition: 'Good'
+    },
+    {
+      id: '4',
+      title: 'Gardening Tool Kit',
+      description: 'Complete gardening tool set including small shovel, pruning shears, watering can, and plant labels. Perfect for beginners.',
+      image: 'https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg?auto=compress&cs=tinysrgb&w=400',
+      donor: 'Sabbir',
+      location: 'Dhaka',
+      date: '2024-01-08',
+      status: 'available',
+      category: 'Tools',
+      condition: 'Good'
+    },
+    {
+      id: '5',
+      title: 'Succulent Collection',
+      description: 'Collection of 5 small succulents in decorative pots. Includes echeveria, jade plant, and other varieties.',
+      image: 'https://images.pexels.com/photos/2123482/pexels-photo-2123482.jpeg?auto=compress&cs=tinysrgb&w=400',
+      donor: 'Karim Hassan',
+      location: 'Dhanmondi, Dhaka',
+      date: '2024-01-05',
+      status: 'completed',
+      category: 'Succulents',
+      condition: 'Good'
+    },
+    {
+      id: '6',
+      title: 'Philodendron Cuttings',
+      description: 'Fresh philodendron heartleaf cuttings ready for rooting. Easy to propagate and perfect for beginners.',
+      image: 'https://images.pexels.com/photos/6208086/pexels-photo-6208086.jpeg?auto=compress&cs=tinysrgb&w=400',
+      donor: 'Maya Patel',
+      location: 'Uttara, Dhaka',
+      date: '2024-01-03',
+      status: 'available',
+      category: 'Cuttings',
+      condition: 'New'
     }
   ];
 

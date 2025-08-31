@@ -85,15 +85,16 @@ const SignupPage: React.FC = () => {
     if (!validateForm()) return;
 
     setIsLoading(true);
+    setErrors({});
     try {
       const success = await signup(formData);
       if (success) {
         navigate('/dashboard');
       } else {
-        setErrors({ general: 'Registration failed. Please try again.' });
+        setErrors({ general: 'Registration failed. Please check your information and try again.' });
       }
     } catch (error) {
-      setErrors({ general: 'Registration failed. Please try again.' });
+      setErrors({ general: error.message || 'Registration failed. Please try again.' });
     } finally {
       setIsLoading(false);
     }

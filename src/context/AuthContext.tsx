@@ -41,9 +41,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     if (storedUser) {
       setUser(JSON.parse(storedUser));
     }
-    console.error('Login error:', error);
-    console.error('Signup error:', error);
-    setErrors({ general: error.message || 'Registration failed. Please try again.' });
     setIsLoading(false);
   }, []);
 
